@@ -4,79 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PERLE | Cosmétiques & Parfums</title>
-    <!-- استدعاء خط فاخر كلاسيكي يماثل خط اللوجو -->
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
             font-family: 'Montserrat', sans-serif;
-            background-color: #F7EBE1; /* نفس لون خلفية اللوجو */
+            background-color: #F7EBE1; /* نفس خلفية الشعار البودرية */
             color: #4A3E3D;
             text-align: center;
             padding: 20px;
         }
         .container {
-            max-width: 600px;
+            max-width: 550px;
             margin: 40px auto;
             padding: 40px 20px;
             background: rgba(255, 255, 255, 0.4);
             border-radius: 20px;
-            border: 1px solid rgba(197, 155, 39, 0.2);
+            border: 1px solid rgba(197, 155, 39, 0.25);
             box-shadow: 0 10px 30px rgba(0,0,0,0.03);
         }
         .brand-title {
             font-family: 'Cinzel', serif;
-            font-size: 3rem;
-            letter-spacing: 6px;
-            color: #C59B27; /* اللون الذهبي الخاص باللوجو */
+            font-size: 3.2rem;
+            letter-spacing: 8px;
+            color: #C59B27;
             font-weight: 700;
-            margin-bottom: 5px;
         }
         .brand-subtitle {
             font-family: 'Cinzel', serif;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             letter-spacing: 3px;
             color: #6E5A53;
             text-transform: uppercase;
-            margin-bottom: 15px;
-        }
-        .divider {
-            width: 80px;
-            height: 1px;
-            background: #C59B27;
-            margin: 20px auto;
-            position: relative;
-        }
-        .divider::after {
-            content: '✦';
-            position: absolute;
-            top: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: #F7EBE1;
-            padding: 0 8px;
-            color: #C59B27;
-            font-size: 0.8rem;
+            margin-top: 5px;
         }
         .slogan {
             font-family: 'Cinzel', serif;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             letter-spacing: 2px;
             color: #927563;
-            margin-bottom: 30px;
-            font-style: italic;
+            margin: 15px 0 25px 0;
         }
+        
+        /* تصميم اللؤلؤة ثلاثية الأبعاد بين الخطين */
+        .pearl-divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 25px 0;
+        }
+        .line {
+            height: 1px;
+            width: 60px;
+            background-color: #C59B27;
+        }
+        .pearl {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 35% 35%, #ffffff, #e6d5c3 60%, #b89b7d 100%);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.15), inset -1px -1px 2px rgba(0,0,0,0.1);
+            margin: 0 15px;
+        }
+
         .description {
             font-size: 0.95rem;
             line-height: 1.8;
             color: #5A4B48;
-            margin-bottom: 35px;
+            margin-bottom: 30px;
             font-weight: 300;
         }
+
         .whatsapp-btn {
             display: inline-block;
             background: linear-gradient(135deg, #D4AF37 0%, #AA7C11 100%);
@@ -96,7 +94,7 @@
             box-shadow: 0 12px 25px rgba(170, 124, 17, 0.35);
         }
         footer {
-            margin-top: 50px;
+            margin-top: 40px;
             font-size: 0.75rem;
             letter-spacing: 1px;
             color: #A08A82;
@@ -106,21 +104,21 @@
 <body>
 
     <div class="container">
-        <!-- اسم الماركة والخط المستوحى من الشعار -->
         <h1 class="brand-title">PERLE</h1>
-        <p class="brand-subtitle">Cosmétiques & Parfums</p>
-        
-        <div class="divider"></div>
-        
+        <p class="brand-subtitle">COSMÉTIQUES & PARFUMS</p>
         <p class="slogan">LA BEAUTÉ EN PERLE</p>
         
+        <div class="pearl-divider">
+            <div class="line"></div>
+            <div class="pearl"></div>
+            <div class="line"></div>
+        </div>
+
         <p class="description">
-            Découvrez l'élégance et le luxe de nos soins cosmétiques et parfums raffinés. 
-            Une expérience unique pour sublimer votre beauté naturelle.
+            Découvrez l'élégance et le luxe de nos soins cosmétiques et parfums raffinés.
         </p>
-        
-        <!-- زر الواتساب باللون الذهبي الملكي -->
-        <a href="https://wa.me/212653234619?text=Bonjour,%20je%20souhaite%20commander%20chez%20PERLE" class="whatsapp-btn" target="_blank">
+
+        <a href="https://wa.me/212XXXXXXXXX?text=Bonjour,%20je%20souhaite%20commander%20chez%20PERLE" class="whatsapp-btn" target="_blank">
             Contactez-nous sur WhatsApp
         </a>
     </div>
