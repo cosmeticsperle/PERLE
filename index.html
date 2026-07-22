@@ -1,149 +1,133 @@
-[12:45, 22/07/2026] ❤️: <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PERLE Cosmetics | زيت بذور التين الشوكي</title>
+    <title>PERLE | Cosmétiques & Parfums</title>
+    <!-- استدعاء خط فاخر كلاسيكي يماثل خط اللوجو -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #faf8f5;
-            color: #2c2c2c;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #F7EBE1; /* نفس لون خلفية اللوجو */
+            color: #4A3E3D;
             text-align: center;
-        }
-        header {
-            background-color: #111;
-            color: #d4af37;
-            padding: 25px 15px;
-            border-bottom: 2px solid #d4af37;
-        }
-        header h1 { 
-            font-size: 2.5rem; 
-            letter-spacing: 3px; 
-            font-weight: 700;
-…
-[12:46, 22/07/2026] ❤️: <!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PERLE Cosmetics | متجر التجميل والمكياج</title>
-    <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #fff5f7;
-            color: #333;
-            text-align: center;
-        }
-        header {
-            background-color: #ffb6c1;
-            color: #fff;
-            padding: 25px 15px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-        header h1 { 
-            font-size: 2.5rem; 
-            letter-spacing: 3px; 
-            font-weight: 700;
-        }
-        header p {
-            color: #fff;
-            font-size: 1rem;
-            margin-top: 5px;
-        }
-        .container {
             padding: 20px;
         }
-        .product-card {
-            background: #fff;
-            max-width: 480px;
-            margin: 30px auto;
-            padding: 25px;
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.4);
             border-radius: 20px;
-            box-shadow: 0 10px 25px rgba(255, 182, 193, 0.3);
-            border: 1px solid #ffe4e8;
+            border: 1px solid rgba(197, 155, 39, 0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
         }
-        .product-image {
-            width: 100%;
-            height: auto;
-            max-height: 400px;
-            object-fit: cover;
-            border-radius: 15px;
-            margin-bottom: 20px;
+        .brand-title {
+            font-family: 'Cinzel', serif;
+            font-size: 3rem;
+            letter-spacing: 6px;
+            color: #C59B27; /* اللون الذهبي الخاص باللوجو */
+            font-weight: 700;
+            margin-bottom: 5px;
         }
-        .badge {
-            display: inline-block;
-            background-color: #ffe4e8;
-            color: #d81b60;
-            padding: 6px 16px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: bold;
-            margin-bottom: 12px;
+        .brand-subtitle {
+            font-family: 'Cinzel', serif;
+            font-size: 0.95rem;
+            letter-spacing: 3px;
+            color: #6E5A53;
+            text-transform: uppercase;
+            margin-bottom: 15px;
         }
-        .product-title { 
-            font-size: 1.8rem; 
-            color: #d81b60; 
-            margin-bottom: 12px; 
+        .divider {
+            width: 80px;
+            height: 1px;
+            background: #C59B27;
+            margin: 20px auto;
+            position: relative;
         }
-        .product-desc { 
-            font-size: 1rem; 
-            color: #666; 
-            margin-bottom: 25px; 
-            line-height: 1.6; 
+        .divider::after {
+            content: '✦';
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #F7EBE1;
+            padding: 0 8px;
+            color: #C59B27;
+            font-size: 0.8rem;
+        }
+        .slogan {
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            color: #927563;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        .description {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: #5A4B48;
+            margin-bottom: 35px;
+            font-weight: 300;
         }
         .whatsapp-btn {
-            display: block;
-            width: 100%;
-            background-color: #25D366;
-            color: #fff;
-            padding: 15px;
-            font-size: 1.1rem;
-            font-weight: bold;
+            display: inline-block;
+            background: linear-gradient(135deg, #D4AF37 0%, #AA7C11 100%);
+            color: #FFF;
+            padding: 16px 35px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 2px;
             text-decoration: none;
+            text-transform: uppercase;
             border-radius: 30px;
-            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
-            transition: 0.3s;
+            box-shadow: 0 8px 20px rgba(170, 124, 17, 0.25);
+            transition: all 0.3s ease;
         }
-        .whatsapp-btn:hover { 
-            background-color: #1eb954; 
+        .whatsapp-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 25px rgba(170, 124, 17, 0.35);
         }
-        footer { 
-            margin-top: 60px; 
-            padding: 20px; 
-            background: #ffb6c1; 
-            color: #fff; 
-            font-size: 0.85rem; 
+        footer {
+            margin-top: 50px;
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            color: #A08A82;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>PERLE</h1>
-        <p>عالم المكياج والجمال الأنيق</p>
-    </header>
-
     <div class="container">
-        <div class="product-card">
-            <!-- صورة المكياج والتجميل الوردي الأنيقة -->
-            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=800" alt="PERLE Cosmetics" class="product-image">
-            
-            <span class="badge">تشكيلة جديدة ✨</span>
-            <h2 class="product-title">مستحضرات PERLE التجميلية</h2>
-            <p class="product-desc">اكتشفي أفضل ألوان وأدوات المكياج والعناية بالجمال لإطلالة ساحرة ومميزة يومياً.</p>
-            
-            <a href="https://wa.me/212600000000?text=مرحباً،%20أريد%20الاستفسار%20عن%20منتجات%20PERLE%20Cosmetics" class="whatsapp-btn" target="_blank">
-                💬 تواصل معنا للطلب عبر الواتساب
-            </a>
-        </div>
+        <!-- اسم الماركة والخط المستوحى من الشعار -->
+        <h1 class="brand-title">PERLE</h1>
+        <p class="brand-subtitle">Cosmétiques & Parfums</p>
+        
+        <div class="divider"></div>
+        
+        <p class="slogan">LA BEAUTÉ EN PERLE</p>
+        
+        <p class="description">
+            Découvrez l'élégance et le luxe de nos soins cosmétiques et parfums raffinés. 
+            Une expérience unique pour sublimer votre beauté naturelle.
+        </p>
+        
+        <!-- زر الواتساب باللون الذهبي الملكي -->
+        <a href="https://wa.me/212600000000?text=Bonjour,%20je%20souhaite%20commander%20chez%20PERLE" class="whatsapp-btn" target="_blank">
+            Contactez-nous sur WhatsApp
+        </a>
     </div>
 
     <footer>
-        <p>&copy; 2026 PERLE Cosmetics. جميع الحقوق محفوظة.</p>
+        &copy; 2026 PERLE COSMÉTIQUES. TOUS DROITS RÉSERVÉS.
     </footer>
 
 </body>
-</html>    
+</html>
