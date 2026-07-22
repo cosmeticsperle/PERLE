@@ -3,22 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PERLE Cosmetics</title>
+    <title>PERLE Cosmetics | العناية الفاخرة بالبشرة</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #fdfbfb;
-            color: #b8860b;
-            text-align: center;
-            padding: 50px;
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
-        h1 {
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #faf8f5;
+            color: #2c2c2c;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #111;
+            color: #d4af37;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #d4af37;
+        }
+        header h1 {
             font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+        header p {
+            color: #ccc;
+            font-size: 1rem;
+            margin-top: 5px;
+        }
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1608248597261-83d81b4d8a23?q=80&w=1000') center/cover;
+            color: #fff;
+        }
+        .hero h2 {
+            font-size: 2.2rem;
+            color: #d4af37;
+            margin-bottom: 15px;
+        }
+        .hero p {
+            max-width: 600px;
+            margin: 0 auto 25px auto;
+            font-size: 1.1rem;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #d4af37;
+            color: #111;
+            padding: 12px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background-color: #fff;
+            color: #111;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .card {
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            padding: 25px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        .card h3 {
+            color: #d4af37;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #111;
+            color: #888;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
-    <h1>مرحباً بكم في PERLE Cosmetics</h1>
-    <p>الموقع قيد التطوير حالياً.</p>
+
+    <header>
+        <h1>PERLE</h1>
+        <p>مستحضرات التجميل الطبيعية الفاخرة</p>
+    </header>
+
+    <section class="hero">
+        <h2>إكسير الطبيعة والنقاء</h2>
+        <p>اكتشفي سر الشباب النضار مع منتجاتنا الفاخرة المستخلصة من أجود المكونات الطبيعية، وزيت بذور التين الشوكي النقي 100%.</p>
+        <a href="#products" class="btn">اكتشفي المنتجات</a>
+    </section>
+
+    <section class="features" id="products">
+        <div class="card">
+            <h3>طبيعي 100%</h3>
+            <p>جميع منتجاتنا مستخلصة بعناية فائقة لضمان الحفاظ على فوائدها العالية.</p>
+        </div>
+        <div class="card">
+            <h3>جودة فاخرة</h3>
+            <p>معايير عالية في التعبئة والتغليف لتقديم تجربة ممتازة تليق بجمالك.</p>
+        </div>
+        <div class="card">
+            <h3>نتائج مذهلة</h3>
+            <p>تغذية وترطيب عالي للبشرة لمقاومة علامات تقدم السن وإعطاء نضارة لا تضاهى.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 PERLE Cosmetics. جميع الحقوق محفوظة.</p>
+    </footer>
+
 </body>
 </html>
